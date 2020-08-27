@@ -26,6 +26,7 @@ while True:
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	sock.connect((ip_addr, _port))
 	sock.sendto((byte).encode('utf-8'), (ip_addr, _port))
+	sock.close()
 	packages -= 1
 	if(packages == 0):
 		break
