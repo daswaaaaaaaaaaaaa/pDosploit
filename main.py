@@ -18,7 +18,7 @@ bytes_package = int(input('Введите количество байт в од�
 while True:
 	byte += '0'
 	bytes_package -= 1
-	if(bytes_package >= 0):
+	if(bytes_package == 0):
 		break
 ip_addr = input('Введите ip вашего сайта:')
 _port = int(input('Введите порт на котором работает сайт:'))
